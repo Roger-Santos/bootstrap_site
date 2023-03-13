@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="display-3">Oscar 2023</h1>
+        </div>        
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="carousel carousel-fade slide" id="carousel-principal" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="d-block w-100" src="https://valencaagora.com/wp-content/uploads/2023/01/81a5afe8-oscars.jpg" alt="Foto estatueta do oscar">
+                            <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                                <h4>95º Edição do Oscar é este fim de semana </h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2022/05/Top-Gun-Maverick-1.jpg" alt="Cena Top-Gun Maverick">
+                            <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                                <h4>Confira os filmes indicados</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="https://i0.wp.com/jardimpamplonashopping.com.br/wp-content/uploads/2020/03/shutterstock_675634225-scaled.jpg?fit=933%2C590&ssl=1" alt="Várias estatuetas do oscar">
+                            <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                                <h4>Quem são os maiores vencedores?</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-principal" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-principal" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-principal" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="cards-content">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header">
+                        <h4>Melhor Filme</h4>
+                    </header>
+                    <img src="https://www.arrobanerd.com.br/wp-content/uploads/2022/04/everythingeverywhere-Copia.jpg" alt="Tudo em todo lugar - poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Tudo em Todo o Lugar ao Mesmo Tempo</h5>
+                        <p class="card-text">
+                            2022 ‧ Ficção científica/Aventura ‧ 2h 19m
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="btn btn-primary">Votar</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header">
+                        <h4>Melhor Ator</h4>
+                    </header>
+                    <img src="https://img.band.uol.com.br/image/2023/03/09/bredan-fraser-e-o-protagonista-do-filme-a-baleia-12921_800x450.webp" alt="Cena do filme A Baleia">
+                    <div class="card-body">
+                        <h5 class="card-title">Brendan Fraser</h5>
+                        <p class="card-text">
+                            A Baleia
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="btn btn-primary">Votar</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                    <header class="card-header">
+                        <h4>Melhor Filme de Animação</h4>
+                    </header>
+                    <img src="https://s2.glbimg.com/Mrrz2yAWtv6MHvfn2S_RsCgojwM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_19863d4200d245c3a2ff5b383f548bb6/internal_photos/bs/2023/Z/i/JEsUDpRwSnStmBirbBKQ/puss-in-boots-2.jpg" alt="Cena do filme Gato de Botas 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato de Botas 2: O Último Pedido</h5>
+                        <p class="card-text">
+                            2022 ‧ Aventura/Comédia ‧ 1h 40m
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="btn btn-primary">Votar</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

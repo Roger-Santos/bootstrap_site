@@ -1,0 +1,28 @@
+header {
+    padding: 16px 0;
+    background-color: rgb(199, 159, 39);
+    color: #fff;
+}
+
+#carousel-principal .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 30vh;
+}
+
+#cards-content {    
+    padding-top: 20px;
+    border-top: solid rgb(199, 159, 39) 1px;
+}
+
+.card-header {
+    background-color: #212529;
+    color: #fff;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
